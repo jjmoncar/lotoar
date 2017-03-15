@@ -1,0 +1,33 @@
+<?php
+header("Content-type: text/html; charset=utf-8");
+include_once("../controlador/conexion.php");
+
+class Clientes{
+ //constructor
+ 	var $conex;
+ 	function Clientes(){
+ 		$this->conex=new Conectar;
+ 	}
+
+	function actualizar($campos,$id){
+		if($this->conex->con()==true){
+                        //echo $id;
+			//print_r($campos);
+			return mysql_query("UPDATE miembros SET nombre = '".$campos[0]."',apellido = '".$campos[1]."',"
+                                . "direccion = '".$campos[2]."',correo = '".$campos[3]."',telefono = '".$campos[4]."',"
+                                . "celular = '".$campos[5]."' WHERE cedula = '".$id."'");
+		}
+	}
+
+	function mostrar_clientes(){
+		if($this->conex->con()==true){
+                    //if($_SESSION["nivel"]==1){
+			return mysql_query("SELECT * FROM miembros ORDER BY cedula ASC");
+                    //}else{
+                    //    return mysql_query("SELECT * FROM miembros WHERE cedula='".$_SESSION["session_cedula"]."' ORDER BY cedula ASC");
+                    //}
+		}
+	}
+}
+?>
+
