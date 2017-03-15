@@ -4,10 +4,10 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/var/www/lotoar/modelo/modeloUsuario.php</file>
+            <file>file:/var/www/lotoar/vista/usuario.php</file>
             <file>file:/var/www/lotoar/controlador/usuario_guardar.php</file>
-            <file>file:/var/www/lotoar/controlador/usuario_actualizar.php</file>
-            <file>file:/var/www/lotoar/modelo/modeloCliente.php</file>
-            <file>file:/var/www/lotoar/vista/usuario_enviar.php</file>
+            <file>file:/var/www/lotoar/controlador/cliente_actualizar.php</file>
+            <file>file:/var/www/lotoar/controlador/usuario_actualizarTodo.php</file>
         </group>
     </open-files>
 </project-private>

@@ -51,7 +51,7 @@ if($consulta) {
 			  <td><?php echo trim(strtoupper($user['usuario'])) ?></td>
 			  <td><?php echo md5($user['pass']) ?></td>
 			  <td><?php echo $user['nivel'] ?></td>
-                          <td><?php if ($user['estatus']=='Activo') {
+                          <td><?php if ($user['estatus']=='1') {
                               echo "Activo";
                                 }else{
                                     echo "Inactivo";
