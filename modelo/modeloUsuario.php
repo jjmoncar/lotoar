@@ -27,7 +27,8 @@ class Usuarios{
         
         function actualizarTodo($campos,$id){
 		if($this->conex->con()==true){
-			//print_r($campos);
+			print_r($campos);
+                        print($id);
 			return mysql_query("UPDATE usuarios SET pass = '".$campos[0]."',nivel = '".$campos[1]."',"
                                 . "estatus = '".$campos[2]."',cedula = '".$campos[3]."'  WHERE usuario = '".$id."'");
 		}
@@ -35,7 +36,7 @@ class Usuarios{
 
 	function mostrar_usuarios(){
 		if($this->conex->con()==true){
-                    if($_SESSION["nivel"]=="1"){
+                    if($_SESSION["nivel"]=='1'){
 			return mysql_query("SELECT * FROM usuarios ORDER BY usuario ASC");
                     }else{
                         return mysql_query("SELECT * FROM usuarios WHERE cedula='".$_SESSION["session_cedula"]."' ORDER BY cedula ASC");

@@ -63,7 +63,7 @@ function authenticate($user, $password) {
                                 $_SESSION['nivel']=$reg["nivel"];
 			}
 
-    if (($user == $_user_)&&($password == $_password_)&&($_SESSION['estatus']=='Activo')) { return 0; }
+    if (($user == $_user_)&&($password == $_password_)&&($_SESSION['estatus']=='1')) { return 0; }
     else { return 1; };
 }
 

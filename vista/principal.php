@@ -10,9 +10,4 @@ include("../base/base.php");
  	echo "Estatus: <strong>".strtoupper($_SESSION["estatus"])."</strong>";
     ?>&nbsp;&nbsp;
     <p><a href="?action=logOut">Cerrar Sesion</a></p><br>
-    
-    <?php
-        $hora=date('H:i:s');
-        echo $hora;
-    ?>
  </div>

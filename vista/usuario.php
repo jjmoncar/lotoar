@@ -57,7 +57,7 @@ if($consulta) {
                                     echo "Inactivo";
                                 }?></td>
                           <td></td>
-                          <td><span class="modi"><a href="../controlador/usuario_actualizar.php?usuario=<?php echo $user['usuario'] ?>"><img src="../src/imagenes/png/16x16/database_process.png" 
+                          <td><span class="modi"><a href="../controlador/usuario_actualizarTodo.php?usuario=<?php echo $user['usuario'] ?>"><img src="../src/imagenes/png/16x16/database_process.png" 
                             title="Editar" alt="Editar" /></a></span></td>
             </tr>
 	<?php
